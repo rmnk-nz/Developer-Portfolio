@@ -1,0 +1,50 @@
+header {
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5em;
+}
+body {
+    background-color:#33393f;
+    color:beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    width: 98%;
+    background-image: linear-gradient(
+    rgba(173, 163, 173, 0.3) 0%,
+    rgb(204, 116, 33) 100%);
+    border: solid beige;
+    border-radius: 15px 15px 15px 15px;
+    border-width: 3px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 17px 5px 17px;
+    padding: 0;
+}
+nav li {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+nav li:hover {
+    box-shadow: 0px 0px 8px beige;
+    border-radius: 15px 15px 15px 15px;
+}
