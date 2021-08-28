@@ -1,21 +1,21 @@
-header {
-
-}
 
 header h1 {
     text-align: center;
     font-size: 5em;
+    color:rgb(204, 116, 33);
+    margin: 0;
 }
 body {
     background-color:#33393f;
     color:beige;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 
 nav {
     position: fixed;
+    width: 100%;
     z-index: 2;
-    width: 98%;
     background-image: linear-gradient(
     rgba(173, 163, 173, 0.3) 0%,
     rgb(204, 116, 33) 100%);
@@ -30,7 +30,9 @@ nav ul {
     justify-content: space-around;
     margin: 5px 17px 5px 17px;
     padding: 0;
+    width: 100%;
 }
+
 nav li {
     display: flex;
     justify-content: space-around;
