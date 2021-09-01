@@ -1,7 +1,12 @@
+:root {
+    --thunder:rgb(204, 116, 33);
+    --silver:rgba(173, 163, 173);
+    --blitz:beige;
+}
 
 body {
     background-color:#33393f;
-    color:beige;
+    color: var(--blitz);
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
@@ -11,9 +16,9 @@ nav {
     z-index: 2;
     width: 99%;
     background-image: linear-gradient(
-    rgba(173, 163, 173) 0%,
-    rgb(204, 116, 33) 100%);
-    border: solid beige;
+    var(--silver) 30%,
+    var(--thunder) 100%);
+    border: solid var(--blitz);
     border-radius: 15px 15px 15px 15px;
     border-width: 3px;
 
@@ -35,13 +40,13 @@ nav li {
 }
 nav li a {
     text-decoration: none;
-    color: beige;
+    color: var(--blitz);
     font-size: 1.5em;
     font-weight: bolder;
 }
 
 nav li:hover {
-    box-shadow: 0px 0px 8px beige;
+    box-shadow: 0px 0px 8px var(--blitz);
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -54,12 +59,12 @@ header {
 .mainimg {
     border-radius: 50%;
     margin: 100px 20px 10px 10px;
-    box-shadow: 0px 0px 8px beige;
+    box-shadow: 0px 0px 8px var(--blitz);
 }
 
 header h1 {
     font-size: 5em;
-    color:rgb(204, 116, 33);
+    color:var(--thunder);
     margin-top: 100px;
 }
 
@@ -76,10 +81,10 @@ section {
     padding: 2em;
     border-radius: 15px;
     border: solid;
-    box-shadow: 0px 0px 8px beige;
+    box-shadow: 0px 0px 8px var(--blitz);
     background-image: linear-gradient(
     rgba(173, 163, 173, 0.3) 0%,
-    rgb(204, 116, 33) 100%);
+    var(--thunder)100%);
 }
 
 section h1 {
@@ -88,8 +93,8 @@ section h1 {
     padding: 0.5rem 1rem;
     text-align: center;
     border-radius: 15px;
-    border: solid beige;
-    background-color:rgb(204, 116, 33);
+    border: solid var(--blitz);
+    background-color:var(--thunder);
 }
 #profile {
     text-align: center;
@@ -97,10 +102,9 @@ section h1 {
 #profile ul {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    
+    list-style-type: none;   
 }
-.githublogo,
+
 .linkedin {
     border-radius: 50%;
 }
@@ -115,9 +119,9 @@ section h1 {
     width: min-content;
     margin: 0 0 -2rem 0;
     padding: 0.5rem 1rem;
-    background-color:rgb(204, 116, 33);
+    background-color:var(--thunder);
     border-radius: 15px;
-    border: solid beige;
+    border: solid var(--blitz);
 }
 
 .code-refactor,
