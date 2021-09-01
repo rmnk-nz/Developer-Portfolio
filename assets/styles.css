@@ -106,7 +106,7 @@ section h1 {
 }
 
 #profile li:hover {
-    box-shadow: 0px 0px 10px beige;
+    box-shadow: 0px 0px 5px beige;
     border-radius: 50%;
 }
 
