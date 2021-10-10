@@ -60,7 +60,6 @@ section {
     border: solid;
 }
 #profile {
-    /* display: grid; */
     text-align: center;
 }
 .profileImage {
@@ -92,21 +91,33 @@ section {
     display: flex;
     justify-content: space-around;
 }
+.daily-schedule-head,
+.weather-dashboard-head,
 .code-quiz-head,
 .groupproject-head {
     position: relative;
     width: max-content;
-    margin: 0 0 -2rem 0;
+    margin: 1.5rem 0 -2rem 0;
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    font-family:'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 1.5rem;
     background-color:var(--night) ;
     border: solid var(--thunder);
 }
-
+.workDaySchedule,
+.weatherDashboard,
 .codeQuiz,
-.groupProject{
+.groupProject {
     border-radius: 30px;
     border: solid 3px var(--thunder)
+}
+.workDaySchedule:hover,
+.weatherDashboard:hover,
+.codeQuiz:hover,
+.groupProject:hover {
+    box-shadow: 0px 0px 15px var(--thunder)
 }
 
 #contacts div {
@@ -127,6 +138,8 @@ section {
         display: flex;
         flex-direction: column;
     }
+    .workDaySchedule,
+    .weatherDashboard,
     .codeQuiz,
     .groupProject {
     width: 100%;
