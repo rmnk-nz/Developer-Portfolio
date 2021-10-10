@@ -5,32 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rua Manukau Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css"/>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li id="profileBtn"><a href="#profile">Profile</a></li>
+            <li id="projectsBtn"><a href="#projects">Projects</a></li>
+            <li id="contatcBtn"><a href="#contacts">Contact</a></li>
         </ul>
     </nav> 
     <header>
-        <img src="./assets/img/developer1.jpg" alt="profile" height="400" width="520" class="mainimg">
-        <div>
-        <h1>Rua Manukau</h1>
-        <h2>Web Developer</h2>
-        </div>
+        <figure class="headerImage"></figure>
     </header>
     <Main>
         <section id="profile">
-            <h1>Profile</h1>
-            <h3>Philosophy</h3>
-            "Own your Mind, Mind your Own"
-            <h3>Ambition</h3>
-            As a developer I am passionate about the creative process of tapping into the ideas and vision that a person wants to achieve and bringing to fruition. 
-            <div>
+        <img class="profileImage" src="./assets/img/profile.jpeg" alt="porfile-image"/>
+            <div id="infoDiv">
+                <h3>Philosophy</h3>
+                "Own your Mind, Mind your Own"
+                <h3>Ambition</h3>
+                As a developer I am passionate about the creative process of tapping into the ideas and vision that a person wants to achieve and bringing to fruition. 
+            </div>
+            <div id="linksDiv">
                 <ul>
                     <li>
                     <a href="https://github.com/rmnk-nz"><img src="./assets/img/logo-git2582757_640.png" alt="github" width="150" height="150" class="githublogo"></a>
@@ -42,22 +41,20 @@
             </div>
         </section>
         <section id="projects">
-            <h1>Projects</h1>
         <div class="project-div">
             <div>
-                <h3 class="code-refactor-head">Code Refactoring</h3>
-                <a href="https://rmnk-nz.github.io/Code-Refactor/">
-                <img src="./assets/img/code-refactoring.jpg" alt="code-refactor" height="400" class="code-refactor">
+                <h3 class="code-quiz-head">Code Quiz</h3>
+                <a href="https://rmnk-nz.github.io/code-quiz/">
+                <img src="./assets/img/codequiz.png" alt="code-quiz" height="400" class="codeQuiz">
                 </a>
             </div>
             <div>
-                <h3 class="deployed-head">placeholder</h3>
-                <img src="./assets/img/profileimg.jpeg" alt="placeholder" height="250" class="deployed-pages">
+                <h3 class="groupproject-head">Group Project</h3><a href="https://annanguyen1.github.io/Track-Journal/homepage.html">
+                <img src="./assets/img/groupproject.png" alt="group-project" height="250" class="groupProject"></a>
             </div>
         </div>
         </section>
         <section id="contacts">
-            <h1>Contact</h1>
             <div>
             <img src="./assets/img/logo-1162901_640.png" alt="email.icon" width="150" height="100">
             <h2>manukau.rua@gmail.com</h2>

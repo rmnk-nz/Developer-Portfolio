@@ -1,9 +1,13 @@
 :root {
     --thunder:rgb(204, 116, 33);
-    --silver:rgba(173, 163, 173);
-    --blitz:beige;
+    --night:#33393f;
+    --blitz:rgb(252, 252, 225);
 }
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color:#33393f;
     color: var(--blitz);
@@ -13,23 +17,14 @@ body {
 
 nav {
     position: fixed;
-    z-index: 2;
-    width: 99%;
-    background-image: linear-gradient(
-    var(--silver) 30%,
-    var(--thunder) 100%);
-    border: solid var(--blitz);
-    border-radius: 15px 15px 15px 15px;
-    border-width: 3px;
-
+    z-index: 2; 
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
-    margin: 5px 17px 5px 17px;
-    padding: 0;
-    width: 95%;
 }
 
 nav li {
@@ -40,64 +35,48 @@ nav li {
 }
 nav li a {
     text-decoration: none;
-    color: var(--blitz);
-    font-size: 1.5em;
-    font-weight: bolder;
-}
+    color: var(--thunder);
+} 
 
 nav li:hover {
-    box-shadow: 0px 0px 8px var(--blitz);
-    border-radius: 15px 15px 15px 15px;
+    font-size: larger;
+    font-weight: bolder;
 }
-
-header {
-    display: flex; 
-    justify-content:space-around;
-    margin: 0px 20px 10px 20px; 
-}
-
-.mainimg {
-    border-radius: 50%;
-    margin: 100px 20px 10px 10px;
-    box-shadow: 0px 0px 8px var(--blitz);
-}
-
-header h1 {
-    font-size: 5em;
-    color:var(--thunder);
-    margin-top: 100px;
-}
-
-header div h2 {
-    margin-top: 0;
+.headerImage {
+    height:600px;
+    width: 100%;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 30%;
+    border-bottom: solid 3px var(--blitz);
+    border-radius: 0 0 40px 40px;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
     margin-top: 50px;
-    padding: 2em;
-    border-radius: 15px;
+    padding: 2rem;
+    border-radius: 40px;
     border: solid;
-    box-shadow: 0px 0px 8px var(--blitz);
-    background-image: linear-gradient(
-    rgba(173, 163, 173, 0.3) 0%,
-    var(--thunder)100%);
-}
-
-section h1 {
-    position: relative;
-    margin: -4rem 0 2rem 0;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    border-radius: 15px;
-    border: solid var(--blitz);
-    background-color:var(--thunder);
 }
 #profile {
+    /* display: grid; */
     text-align: center;
+}
+.profileImage {
+    height:400px;
+    width: max-content;
+    border: solid 3px var(--thunder);
+    border-radius: 30px;
+}
+#infoDiv, #linksDiv {
+    padding: 10px;
+    margin-top: 20px;
+    border: solid 3px var(--thunder);
+    border-radius: 30px;
+}
+.linkedin, .githublogo {
+
 }
 #profile ul {
     display: flex;
@@ -113,20 +92,21 @@ section h1 {
     display: flex;
     justify-content: space-around;
 }
-.code-refactor-head,
-.deployed-head {
+.code-quiz-head,
+.groupproject-head {
     position: relative;
-    width: min-content;
+    width: max-content;
     margin: 0 0 -2rem 0;
     padding: 0.5rem 1rem;
-    background-color:var(--thunder);
     border-radius: 15px;
-    border: solid var(--blitz);
+    background-color:var(--night) ;
+    border: solid var(--thunder);
 }
 
-.code-refactor,
-.deployed-pages {
-    border-radius: 15px 15px 15px 15px;
+.codeQuiz,
+.groupProject{
+    border-radius: 30px;
+    border: solid 3px var(--thunder)
 }
 
 #contacts div {
@@ -135,6 +115,24 @@ section h1 {
     align-items: center;
 }
 
+@media  screen and (max-width:600px) {
+    .headerImage {
+
+        height: 500px;
+    }
+    nav {
+        font-size: 1rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .codeQuiz,
+    .groupProject {
+    width: 100%;
+    height: max-content;
+    }
+}
 @media screen and (max-width: 992px) {
     header {
         display: flex;
@@ -149,11 +147,12 @@ section h1 {
 
     }
 
-    .code-refactor {
+    .code-quiz {
         width: 100%;
         height: 100%;
     }
 }
+
 @media screen and (max-width: 1280px) {
     .project-div {
         display: flex;
