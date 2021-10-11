@@ -11,7 +11,8 @@
 body {
     background-color:#33393f;
     color: var(--blitz);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
     margin: 0;
 }
 
@@ -62,6 +63,7 @@ section {
 #profile {
     display: grid;
     grid-gap: 20px;
+    align-items: center;
     text-align: center;
 }
 .profileImage {
@@ -72,7 +74,7 @@ section {
     border: solid 3px var(--thunder);
     border-radius: 30px;
 }
-#titleDiv,
+
 #infoDiv,
 #quoteDiv {
     padding: 10px;
@@ -87,34 +89,48 @@ section {
 }
 #titleDiv {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
     font-family:'Permanent Marker', cursive;
-    height: min-content;
-    width: max-content;
+    font-weight: lighter;
 }
 #infoDiv {
-    grid-row: 2 / span 2;
+    font-family: 'Gloria Hallelujah', cursive;
+    grid-row: 3;
     grid-column: 2;
-    height: max-content;
+    height: min-content;
+}
+#quoteDiv {
+    grid-row: 2;
+    grid-column: 1;
+    color: var(--blitz);
+    font-family:'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+}
+.item1 {
+    grid-row: 2;
+    grid-column: 2;
 }
 .item2 {
-    grid-row: 1;
-    grid-column-end: 2;
-    grid-column: 2;
+    color: var(--thunder);
+    grid-row: 3;
+    grid-column: 1;
 }
 .githublogo,
 .resume,
 .linkedin {
     border-radius: 50%;
 }
-.resume:hover,
+.resume:hover {
+    box-shadow: 0px 0px 15px var(--thunder)
+}
 .linkedin:hover,
 .githublogo:hover {
-    box-shadow: 0px 0px 15px var(--thunder)
-
+    height: 160px;
 }
 
-.project-div{
+#projects {
     display: flex;
     justify-content: space-around;
 }
@@ -147,6 +163,7 @@ section {
     box-shadow: 0px 0px 15px var(--thunder)
 }
 #contacts {
+    font-family: 'Gloria Hallelujah', cursive;
     margin-bottom: 50px;
 }
 #contacts div {
@@ -166,16 +183,15 @@ section {
         display: flex;
         flex-direction: column;
     }
-    .profileImage {
-        width: max-content;
-        grid-column:1;
-        grid-row: 2 / span 3;
-
+    #profile {
+        display: flex;
+        flex-direction: column;
     }
+   
     .githublogo,
     .resume,
     .linkedin {
-        height: 50px;
+        height: 100px;
     }
     .workDaySchedule,
     .weatherDashboard,
@@ -184,6 +200,10 @@ section {
     width: 100%;
     height: max-content;
     }
+    .projectDiv1 {
+        margin-top: 2.5rem;
+    }
+  
 }
 @media screen and (max-width: 992px) {
     header {
@@ -205,9 +225,10 @@ section {
     }
 }
 
-@media screen and (max-width: 1280px) {
-    .project-div {
+@media screen and (max-width: 1427px) {
+    #projects {
         display: flex;
         flex-direction: column;
     }
+    
 }
