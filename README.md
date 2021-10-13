@@ -6,7 +6,8 @@ Create a portfolio page to display information about myself and a log of deploye
 Deployed page:https://rmnk-nz.github.io/professional-portfolio/
 
 Screenshots of page:
-![2021-10-13 (10)](https://user-images.githubusercontent.com/86906047/137073606-bce64d88-3965-47e4-8cc3-7a10eed9a4e7.png)
-![2021-10-13 (11)](https://user-images.githubusercontent.com/86906047/137073611-ad5d8ef3-38d0-4896-aee6-3e681f85e336.png)
-![2021-10-13 (12)](https://user-images.githubusercontent.com/86906047/137073616-19a2036b-f17b-46d3-a5c7-c67c38af165f.png)
 
+![2021-10-14 (8)](https://user-images.githubusercontent.com/86906047/137224960-65a7ad11-085c-40c2-bc9e-2df77c298e05.png)
+![2021-10-14 (5)](https://user-images.githubusercontent.com/86906047/137224972-8facf3c7-79d9-472d-aa5c-e4963a409df7.png)
+![2021-10-14 (6)](https://user-images.githubusercontent.com/86906047/137224978-91eee4b8-3bb1-4a04-932b-d47a11f51be5.png)
+![2021-10-14 (7)](https://user-images.githubusercontent.com/86906047/137224982-ef572dea-f8ac-44c1-921a-06f190aee3f5.png)
