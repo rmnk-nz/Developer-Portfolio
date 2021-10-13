@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rua Manukau Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css"/>
 </head>
 
@@ -19,7 +18,8 @@
         </ul>
     </nav> 
     <header>
-        <figure class="headerImage"></figure>
+        <figure class="headerImage"> 
+        </figure>
     </header>
     <Main>
         <section id="profile">
@@ -27,15 +27,16 @@
             <div id="titleDiv">
                 <h1>Rua Manukau</h1>
                 <h2>Full Stack Web Developer</h2>
-            </div>
-            <div id="quoteDiv">
-                <h3>Favourite Quote:</h3>
-                "Own your Mind, Mind your Own"
-                ~ Nipsey Hussel
-            </div>
-            <div id="infoDiv">
+            </div>           
+            <div id="ambitionDiv">
                 <h3>* Ambition *</h3>
                 As a developer I am passionate about the creative process of tapping into the ideas and vision that a person wants to achieve and bringing to fruition. 
+            </div>
+            <div id="quoteDiv">
+                <h3>
+                "Own your Mind, Mind your Own"
+                ~ Nipsey Hussel
+                </h3>
             </div>
             <div class="item1">
                 <a href="https://github.com/rmnk-nz">
@@ -69,14 +70,23 @@
                 <a href="https://rmnk-nz.github.io/weather-dashboard/">
                 <img src="./assets/img/weatherdashboard.png" alt="weather-dashboard" height="250" class="weatherDashboard"></a>
             </div>
-        </div>
         </section>
         <section id="contacts">
+            <div id="logoDiv">
+                created by
+                <div class="initials">
+                    <h1 class="r">R</h1>
+                    <h1 class="m">M</h1>
+                </div>
+                Design & Develop
+            </div>
             <div>
-            <img src="./assets/img/logo-1162901_640.png" alt="email.icon" width="150" height="100">
-            <h2>manukau.rua@gmail.com</h2>
-            <img src="./assets/img/icons-1831923phone_640.png" alt="phone-icon" width="130" height="130">
-            <h2>04 123 456 78</h2>
+                <img src="./assets/img/logo-1162901_640.png" alt="email.icon" width="150" height="100" class="email">
+                <h2>manukau.rua@gmail.com</h2>
+            </div>
+            <div>
+                <img src="./assets/img/icons-1831923phone_640.png" alt="phone-icon" width="130" height="130" class="phone">
+                <h2>04 123 456 78</h2>
             </div>
         </section>
     </Main>
