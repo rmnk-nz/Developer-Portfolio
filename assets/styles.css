@@ -56,22 +56,15 @@ nav li:hover {
     border-bottom: solid 3px var(--blitz);
     border-radius: 0 0 40px 40px;
 }
-#profile, #contacts {
-    margin: 50px 20px 50px 20px;
-    padding: 2rem;
-}
-#projects {
-    margin: 50px 20px 50px 20px;
-    padding: 2rem;
-    border-radius: 0px 40px 0px 40px;
-    border: solid;
-}
 
 #profile {
     display: inline-grid;
     grid-gap: 20px;
     align-items: center;
     text-align: center;
+    margin: 50px 20px 50px 20px;
+    padding: 2rem;
+    
 }
 
 .profileImage {
@@ -111,6 +104,10 @@ nav li:hover {
     font-family:'Gloria Hallelujah', cursive;
     font-size: 1.5rem;
     font-weight: lighter;
+    margin-top: 20px;
+    width: 500px;
+    border: solid 3px var(--blitz);
+    border-radius: 0px 30px 0px 30px;
 }
 .item1 {
     grid-row: 2;
@@ -137,6 +134,10 @@ nav li:hover {
 #projects {
     display: flex;
     justify-content: space-around;
+    margin: 50px 20px 50px 20px;
+    padding: 2rem;
+    border-radius: 0px 40px 0px 40px;
+    border: solid;
 }
 .daily-schedule-head,
 .weather-dashboard-head,
@@ -146,12 +147,12 @@ nav li:hover {
     width: max-content;
     margin: 1.5rem 0 -2rem 0;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 0px 30px 0px 30px;
     font-family:'Permanent Marker', cursive;
     font-weight: lighter;
     font-size: 1.5rem;
     background-color:var(--night) ;
-    border: solid var(--thunder);
+    border: solid var(--blitz);
 }
 .workDaySchedule,
 .weatherDashboard,
@@ -200,6 +201,8 @@ nav li:hover {
     text-align: center;
     font-family: 'Gloria Hallelujah', cursive;
     margin-bottom: 50px;
+    margin: 50px 20px 50px 20px;
+    padding: 2rem;
 }
 
 
@@ -211,13 +214,14 @@ nav li:hover {
         margin-top: 10px;
     }
     .headerImage {
-        height: 700px;
+        background-size: 900px 900px ;
     }
     #profile {
         display: flex;
         flex-direction: column;
     }
     #titleDiv, #quoteDiv {
+        border: none;
         font-size: 1rem;
     }
     .item1 {
@@ -273,6 +277,9 @@ nav li:hover {
         margin-top: 20px;
         margin-bottom: 20px;
 
+    }
+    #quoteDiv {
+        width:100%;
     }
     .codeQuiz {
         width: 100%;
