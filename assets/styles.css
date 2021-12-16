@@ -25,6 +25,7 @@ nav {
 
 nav ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -220,7 +221,9 @@ nav li:hover {
     margin: 50px 20px 50px 20px;
     padding: 2rem;
 }
-
+#email, #phone {
+    font-size: 100px;
+}
 
 @media  screen and (max-width:860px) {
     nav {
@@ -236,14 +239,14 @@ nav li:hover {
         
     }
     .headerImage {
-        background-size: 1000px 900px ;
+        background-size: 900px 900px ;
     }
     #profile {
         display: flex;
         flex-direction: column;
     }
     #titleDiv h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     #quoteDiv {
         width: 100%;
@@ -262,7 +265,7 @@ nav li:hover {
     .githublogo,
     .resume,
     .linkedin {
-        height: 100px;
+        height: 80px;
     }
     .linkedin:hover,
     .githublogo:hover {
@@ -281,13 +284,14 @@ nav li:hover {
     .groupProject {
     width: 100%;
     height: max-content;
+    border-radius: 40px 0px 40px 40px;
+    border: solid 3px var(--thunder);
     }
     .projectDiv1, .profileImage {
         margin-top: 20px;
     }
-    .email, .phone {
-        height: 100px;
-        margin-top: 20px;
+    #email, #phone {
+        font-size: 50px;
     }
     #logoDiv {
         margin-top: 20px;
@@ -314,22 +318,11 @@ nav li:hover {
         margin-top: 20px;
         grid-row: 1;
         grid-column: 1 / span 2;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-   
+    }   
 }
 @media screen and (min-width: 1200px) {
     #profile, #contacts, #projects {
         margin: 50px 100px 50px 300px;
         padding: 2rem;
     }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
 }
